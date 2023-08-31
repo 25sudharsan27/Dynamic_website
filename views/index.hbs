@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Webiste using nodejs</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
+    {{>navbar data=details}}
+    {{>slider slides=slides}}
+    
+    {{!-- services section --}}
+    {{>services service=service}}
+    {{!-- bootstrap js  modules  --}}
+    
+
+    {{!-- contact us section --}}
+
+    <section id="contact_us_section" class="py-5 background1">
+    <div class="container" id="contact-us">
+            <h3 class="text-center" style="color:white;">Contact us</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="/process-contact-form">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label" style="color:rgb(207, 199, 199);">Your Email address</label>
+                            <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="contactNumberField" style="color:rgb(207, 199, 199);" class="form-label">Contact number</label>
+                            <input name="phone" type="password" class="form-control" id="contactNumberField">
+                        </div>
+                        <div class="form-floating mt-2">
+                            <textarea name="query" style="height:250px;" class="form-control" placeholder="Enter your query here" id="querysection" style="height: 100px"></textarea>
+                            <label for="queryField">Your query</label>
+                        </div>
+                        <div class="container text-center py-4">
+                                                    <button  type="submit" class="btn " style="background-color:blueviolet;color:white;">Submit</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container" id="about">
+        <div class="row">
+            <div class="col-md-12 py-5">
+                <h3 class="text-center text-dark"> About this role</h3>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, est maxime eveniet sunt dolorem in voluptatibus, necessitatibus debitis veniam esse expedita, mollitia officiis repudiandae pariatur quis non autem fugiat officia aspernatur quaerat deleniti sed iste nemo. Autem dignissimos suscipit dolores veritatis tempora blanditiis debitis adipisci non, voluptatem ipsam omnis qui similique ad impedit corporis necessitatibus ipsum aliquid. Maxime, dicta accusamus sunt omnis accusantium beatae dolore vero quidem deleniti ab. Illum exercitationem quas blanditiis quis perferendis nam reprehenderit saepe, nesciunt eos natus aliquam vel, dicta hic, dolore provident quisquam doloremque atque? Ipsam fuga suscipit sit quod hic eos exercitationem facere porro.</p>
+                <div class="container text-center">
+                    <button class="btn btn-success" >Contact us </button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer background text-center py-5 background1">
+        <div class="container-float">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <p style="color:white;">@ 2023 Copyright: <span>Learn Code Through practice</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</body>
+</html>

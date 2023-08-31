@@ -1,0 +1,31 @@
+{
+  "name": "dynamic-website",
+  "version": "1.0.0",
+  "description": "this is project with full stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/app.js -e js,hbs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/25sudharsan27/Dynamic-website.git"
+  },
+  "author": "Sudharsan B",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/25sudharsan27/Dynamic-website/issues"
+  },
+  "homepage": "https://github.com/25sudharsan27/Dynamic-website#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "feather-icons": "^4.29.0",
+    "hbs": "^4.2.0",
+    "mongoose": "^7.3.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
